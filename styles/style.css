@@ -97,7 +97,7 @@ body {
 
 .sidebar-icon {
     position: absolute;
-    top: 4px;
+    top: 6px;
     right: -34px;
     padding: 15px 17px;
     background-color: #fff;
@@ -414,6 +414,7 @@ body {
     filter: drop-shadow(0 7px 11px rgb(3%, 0%, 18%, 7%));
     cursor: pointer;
     transition: ease-in-out .3s;
+    border-radius: 4px;
 }
 
 .enter__block-item:hover {
