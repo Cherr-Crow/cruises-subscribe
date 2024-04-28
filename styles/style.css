@@ -57,6 +57,10 @@ body {
     background-color: #EDEDED;
 }
 
+.main__container section:not(:first-child) {
+    margin-bottom: 40px;
+}
+
 /* sidebar */
 
 .wrapper {
@@ -86,7 +90,8 @@ body {
     margin-bottom: 220px;
 }
 
-.header-top, .enter {
+.header-top,
+.enter {
     padding-left: 83px;
 }
 
@@ -408,13 +413,18 @@ body {
     filter: drop-shadow(0 3.54px 4.8px rgb(3%, 0%, 18%, 4.72%));
     filter: drop-shadow(0 7px 11px rgb(3%, 0%, 18%, 7%));
     cursor: pointer;
+    transition: ease-in-out .3s;
 }
 
-.enter__block-item  span {
+.enter__block-item:hover {
+    box-shadow: inset #A7D4FF 0px 0px 80px 5px;
+}
+
+.enter__block-item span {
     margin: 0 auto;
 }
 
-.enter__block-item  span:last-child {
+.enter__block-item span:last-child {
     margin: 0 auto;
     font-size: 24px;
 }
@@ -422,4 +432,93 @@ body {
 .enter__block-item:not(:last-child) {
     margin-bottom: 4px;
     margin-right: 16px;
+}
+
+.enter {
+    padding-right: 32px;
+}
+
+/* form agency */
+
+.enter-agency__block:hover {
+    box-shadow: none;
+    cursor: auto;
+}
+
+.enter-agency__block {
+    padding: 16px;
+    min-width: 400px;
+}
+
+.enter__block-title {
+    font-size: 18px;
+    color: #0A2239;
+}
+
+.form-labels {
+    display: flex;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.enter__block-label {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.enter__block-label:first-child {
+    margin-right: 16px;
+}
+
+.enter__block-label div {
+    margin-right: 3px;
+    font-size: 12px;
+    color: #555555;
+}
+
+.enter__block-label div span {
+    font-size: 12px;
+    color: #FF4F4F;
+}
+
+.enter__block-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #CFD3D5;
+    border-radius: 3px;
+}
+
+.enter__block-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enter__block-link {
+    display: block;
+    margin-right: 14px;
+    font-size: 14px;
+    color: #0F7EE6;
+    border-bottom: 1px solid #0F7EE6;
+    cursor: pointer;
+}
+
+.enter__block-btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-width: 246px;
+    width: 100%;
+    background-color: #F3862E;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.enter__block-btn:hover {
+  background-color: #E55300;
 }
